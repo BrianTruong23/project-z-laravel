@@ -12,6 +12,10 @@ class Project extends Model
         'name',
         'description',
         'skill_required',
-        'location'
+        'city',
+        'state',
+        "zip",
+        "remote"
+
     ];
 }

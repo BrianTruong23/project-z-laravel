@@ -28,6 +28,9 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('projects/search/{name}', [ProjectController::class, 'search']);
 Route::get('projects/search/{id}', [ProjectController::class, 'show']);
 
+// Testing purposes of deleting all
+Route::delete('projects/deleteall}', [ProjectController::class, 'destroy_all']);
+
 
  # Protected Routes 
 Route::group(['middleware' => ['auth:sanctum']], function(){

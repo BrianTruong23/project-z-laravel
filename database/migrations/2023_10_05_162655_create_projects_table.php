@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('skill_required'); // 'skill_required' as a varchar
-            $table->string('location'); // 'location' as a varchar
+            $table->string('city'); 
+            $table->string('state'); 
+            $table->string('zip'); 
+            $table->boolean('remote'); 
             $table->timestamps();
         });
     }
