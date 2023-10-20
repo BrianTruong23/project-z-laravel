@@ -26,7 +26,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('projects/search/{name}', [ProjectController::class, 'search']);
-Route::get('projects/search/{id}', [ProjectController::class, 'show']);
+Route::get('projects/show/{id}', [ProjectController::class, 'show']);
 
 // Testing purposes of deleting all
 Route::delete('projects/deleteall}', [ProjectController::class, 'destroy_all']);
